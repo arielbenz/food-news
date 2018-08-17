@@ -77,6 +77,3 @@ buildNumber.properties
 ### IntelliJ ###
 .idea/
 *.iml
-
-### UI Content ###
-ui.content/src/main/content/jcr_root/content/
