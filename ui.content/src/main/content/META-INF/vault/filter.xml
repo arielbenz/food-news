@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/foodnews"/>
-    <filter root="/content/foodnews"/>
-    <filter root="/content/dam/foodnews"/>
+    <filter root="/conf/foodnews" mode="merge" />
+    <filter root="/content/foodnews" mode="merge" />
+    <filter root="/content/dam/foodnews" mode="merge" />
 </workspaceFilter>

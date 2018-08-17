@@ -96,13 +96,9 @@
                     <verbose>true</verbose>
                     <failOnError>true</failOnError>
                     <group>bestpost-foodnews</group>
-                    <embeddeds>
-                        <embedded>
-                            <groupId>com.bestpost.foodnews</groupId>
-                            <artifactId>bestpost-foodnews.core</artifactId>
-                            <target>/apps/foodnews/install</target>
-                        </embedded>
-                    </embeddeds>
+                    <properties>
+                        <acHandling>merge_preserve</acHandling>
+                    </properties>
                 </configuration>
             </plugin>
         </plugins>
