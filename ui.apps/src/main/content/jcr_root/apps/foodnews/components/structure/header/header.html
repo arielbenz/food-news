@@ -5,5 +5,7 @@
 <header class="foodnews-header">
     <div class="container">
         <a class="foodnews-header-logo" href="${properties.rootPath || currentStyle.rootPath @ extension='html'}">Food News</a>
+        <div class="cmp-search--header" data-sly-resource="${'search' @ resourceType='foodnews/components/structure/search'}"></div>
+        <div class="cmp-navigation--header" id="header-navbar" data-sly-resource="${'navigation' @ resourceType='foodnews/components/structure/navigation'}"></div>
     </div>
 </header>
