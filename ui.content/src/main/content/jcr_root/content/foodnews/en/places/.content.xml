@@ -2,11 +2,11 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2018-08-24T09:29:33.971-03:00"
+        cq:lastModified="{Date}2018-08-23T09:14:17.308-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/foodnews/settings/wcm/templates/landing-page-template"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Home"
+        jcr:title="Places"
         sling:resourceType="foodnews/components/structure/page">
         <root
             jcr:primaryType="nt:unstructured"
@@ -17,21 +17,7 @@
                 jcr:lastModified="{Date}2018-08-17T15:04:57.025-03:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid">
-                <card
-                    jcr:created="{Date}2018-08-24T09:29:00.167-03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2018-08-24T09:29:33.970-03:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="foodnews/components/content/card"
-                    articlePath="/content/foodnews/en/recepies/burgers"
-                    hideDescription="false"/>
-            </responsivegrid>
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
         </root>
     </jcr:content>
-    <recepies/>
-    <news/>
-    <tips/>
-    <places/>
 </jcr:root>

@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
-        cq:lastModified="{Date}2018-08-17T14:49:12.585-03:00"
+        cq:lastModified="{Date}2018-08-23T09:58:16.366-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/foodnews/settings/wcm/templates/article-page-template"
         jcr:primaryType="cq:PageContent"
@@ -12,19 +12,48 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid">
             <header
-                jcr:created="{Date}2018-08-17T14:48:04.462-03:00"
+                jcr:created="{Date}2018-08-23T09:58:16.363-03:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2018-08-17T14:48:04.462-03:00"
+                jcr:lastModified="{Date}2018-08-23T09:58:16.363-03:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foodnews/components/structure/header">
                 <navigation
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="wknd/components/structure/navigation"/>
+                    sling:resourceType="foodnews/components/structure/navigation"/>
                 <search
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="wknd/components/structure/search"/>
+                    sling:resourceType="foodnews/components/structure/search"/>
             </header>
+            <image
+                jcr:created="{Date}2018-08-22T12:21:06.533-03:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-08-22T12:21:06.533-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foodnews/components/content/image"
+                editable="{Boolean}true"/>
+            <breadcrumb
+                jcr:created="{Date}2018-08-22T12:21:27.431-03:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-08-22T12:21:27.431-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foodnews/components/content/breadcrumb"/>
+            <title
+                jcr:created="{Date}2018-08-22T12:22:11.590-03:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-08-22T12:22:11.590-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foodnews/components/content/title"
+                editable="{Boolean}true">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <tablet
+                        jcr:primaryType="nt:unstructured"
+                        width="12"/>
+                </cq:responsive>
+            </title>
             <responsivegrid
                 jcr:created="{Date}2018-08-17T14:49:12.583-03:00"
                 jcr:createdBy="admin"
@@ -33,8 +62,55 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid"
                 editable="{Boolean}true">
-                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        width="9"/>
+                    <tablet
+                        jcr:primaryType="nt:unstructured"
+                        width="12"/>
+                </cq:responsive>
             </responsivegrid>
+            <responsivegrid_1937581315
+                jcr:created="{Date}2018-08-22T12:22:53.571-03:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-08-22T12:22:53.571-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                editable="{Boolean}true">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        width="3"/>
+                    <tablet
+                        jcr:primaryType="nt:unstructured"
+                        behavior="hide"/>
+                </cq:responsive>
+            </responsivegrid_1937581315>
+            <responsivegrid_1898715075
+                jcr:created="{Date}2018-08-23T09:17:48.958-03:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-08-23T09:17:48.958-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <navigation
+                    jcr:created="{Date}2018-08-23T09:20:05.899-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2018-08-23T09:20:05.899-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foodnews/components/content/navigation"/>
+                <navigation_364250003
+                    jcr:created="{Date}2018-08-23T09:24:11.306-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2018-08-23T09:24:11.306-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foodnews/components/structure/navigation"/>
+            </responsivegrid_1898715075>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">

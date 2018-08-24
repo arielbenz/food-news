@@ -31,12 +31,12 @@
                             mergeList="{Boolean}true"/>
                     </content-default>
                     <policy_108527940431876
-                        jcr:lastModified="{Date}2018-08-17T15:05:15.840-03:00"
+                        jcr:lastModified="{Date}2018-08-24T09:28:41.153-03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Food News Content"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/libs/wcm/foundation/components/responsivegrid,/apps/foodnews/components/content/breadcrumb,/apps/foodnews/components/content/image,/apps/foodnews/components/content/list,/apps/foodnews/components/content/text,/apps/foodnews/components/content/title]">
+                        components="[/libs/wcm/foundation/components/responsivegrid,/apps/foodnews/components/content/breadcrumb,/apps/foodnews/components/content/card,/apps/foodnews/components/content/contentfragment,/apps/foodnews/components/content/image,/apps/foodnews/components/content/list,/apps/foodnews/components/content/text,/apps/foodnews/components/content/title]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                         <cq:authoring jcr:primaryType="nt:unstructured">
                             <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -49,6 +49,25 @@
                             </assetToComponentMapping>
                         </cq:authoring>
                     </policy_108527940431876>
+                    <policy_32200367658913
+                        jcr:lastModified="{Date}2018-08-22T12:24:20.145-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="FN Article Sidebar"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/apps/foodnews/components/content/image,/apps/foodnews/components/content/list,/apps/foodnews/components/content/text]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_32200367658913>
+                    <policy_59243277354606
+                        cq:styleDefaultClasses="cmp-layout-container--footer full-width"
+                        jcr:lastModified="{Date}2018-08-23T09:27:29.704-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="FN Layout Container - Footer"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:FN.Content,group:FN.Structure]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_59243277354606>
                 </responsivegrid>
             </components>
         </foundation>
@@ -66,6 +85,222 @@
                     </form-container>
                 </container>
             </form>
+            <content jcr:primaryType="nt:unstructured">
+                <title jcr:primaryType="nt:unstructured">
+                    <policy_1534876377981
+                        jcr:lastModified="{Date}2018-08-21T15:34:56.738-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="FN Title - Article"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        allowedTypes="[h1,h2,h3,h4,h5,h6]"
+                        type="h1">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="cmp-title--underline"
+                                        cq:styleId="1534876472859"
+                                        cq:styleLabel="Underline"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1534876377981>
+                </title>
+                <text jcr:primaryType="nt:unstructured">
+                    <policy_1534876653669
+                        jcr:lastModified="{Date}2018-08-22T12:32:06.972-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="FN Text - Article"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="-">
+                                <formats
+                                    jcr:primaryType="nt:unstructured"
+                                    override="true">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Paragraph"
+                                        tag="p"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Quote"
+                                        tag="blockquote"/>
+                                </formats>
+                            </paraformat>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="-">
+                                <specialCharsConfig jcr:primaryType="nt:unstructured">
+                                    <chars
+                                        jcr:primaryType="nt:unstructured"
+                                        override="true">
+                                        <item0
+                                            jcr:primaryType="nt:unstructured"
+                                            entity="&amp;copy;"
+                                            name="copyright"/>
+                                        <item1
+                                            jcr:primaryType="nt:unstructured"
+                                            entity="&amp;euro;"
+                                            name="euro"/>
+                                        <item2
+                                            jcr:primaryType="nt:unstructured"
+                                            entity="&amp;reg;"
+                                            name="registered"/>
+                                        <item3
+                                            jcr:primaryType="nt:unstructured"
+                                            entity="&amp;trade;"
+                                            name="trademark"/>
+                                    </chars>
+                                </specialCharsConfig>
+                            </misctools>
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="-"/>
+                            <findreplace
+                                jcr:primaryType="nt:unstructured"
+                                features="-"/>
+                            <spellcheck
+                                jcr:primaryType="nt:unstructured"
+                                features="-"/>
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="-"/>
+                            <lists
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <justify
+                                jcr:primaryType="nt:unstructured"
+                                features="-"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="bold,italic,underline"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                features="modifylink,unlink"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="-"/>
+                        </rtePlugins>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="cmp-text--quote"
+                                        cq:styleId="1534876683749"
+                                        cq:styleLabel="Quote Block"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1534876653669>
+                </text>
+                <breadcrumb jcr:primaryType="nt:unstructured"/>
+                <list jcr:primaryType="nt:unstructured">
+                    <policy_1534950267880
+                        jcr:lastModified="{Date}2018-08-22T12:31:33.059-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="FN List - Article"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        dateFormat="EEEE, d MMM y"
+                        disableChildren="false"
+                        disableSearch="false"
+                        disableStatic="false"
+                        disableTags="false"
+                        linkItems="false"
+                        showDescription="false"
+                        showModificationDate="false">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="cmp-list--upnext"
+                                        cq:styleId="1534950307710"
+                                        cq:styleLabel="Up Next"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1534950267880>
+                </list>
+                <contentfragment jcr:primaryType="nt:unstructured"/>
+                <navigation jcr:primaryType="nt:unstructured">
+                    <policy_1535026809218
+                        cq:styleDefaultClasses="cmp-navigation--footer"
+                        jcr:lastModified="{Date}2018-08-23T09:21:33.158-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="FN Navigation - Footer"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        collectAllPages="false"
+                        navigationRoot="/content/foodnews/en"
+                        skipNavigationRoot="true"
+                        structureDepth="1">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1535026809218>
+                </navigation>
+            </content>
+            <structure jcr:primaryType="nt:unstructured">
+                <navigation jcr:primaryType="nt:unstructured">
+                    <policy_1535027054809
+                        cq:styleDefaultClasses="cmp-navigation--footer"
+                        jcr:lastModified="{Date}2018-08-23T09:27:55.824-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="FN Navigation - Footer"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        collectAllPages="false"
+                        navigationRoot="/content/foodnews/en"
+                        skipNavigationRoot="true"
+                        structureDepth="1">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1535027054809>
+                    <policy_61771588646633
+                        jcr:lastModified="{Date}2018-08-23T10:03:29.555-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="FN Navigation - Header"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        collectAllPages="false"
+                        navigationRoot="/content/foodnews/en"
+                        skipNavigationRoot="true"
+                        structureDepth="1">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_61771588646633>
+                </navigation>
+                <header jcr:primaryType="nt:unstructured">
+                    <policy_1535029147869
+                        jcr:lastModified="{Date}2018-08-23T10:03:20.733-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="FN Header"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        rootPath="/content/foodnews/en">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1535029147869>
+                </header>
+                <search jcr:primaryType="nt:unstructured">
+                    <policy_1535029268253
+                        jcr:lastModified="{Date}2018-08-23T10:03:35.784-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="FN Search - Header"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        resultsSize="10"
+                        searchRoot="/content/foodnews/en"
+                        searchTermMinimumLength="3">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1535029268253>
+                </search>
+            </structure>
         </components>
     </foodnews>
 </jcr:root>

@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
-        cq:lastModified="{Date}2018-08-17T15:04:50.930-03:00"
+        cq:lastModified="{Date}2018-08-23T10:03:14.396-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/foodnews/settings/wcm/templates/landing-page-template"
         jcr:primaryType="cq:PageContent"
@@ -12,18 +12,18 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid">
             <header
-                jcr:created="{Date}2018-08-17T15:04:39.229-03:00"
+                jcr:created="{Date}2018-08-23T10:03:14.394-03:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2018-08-17T15:04:39.229-03:00"
+                jcr:lastModified="{Date}2018-08-23T10:03:14.394-03:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foodnews/components/structure/header">
                 <navigation
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="wknd/components/structure/navigation"/>
+                    sling:resourceType="foodnews/components/structure/navigation"/>
                 <search
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="wknd/components/structure/search"/>
+                    sling:resourceType="foodnews/components/structure/search"/>
             </header>
             <responsivegrid
                 jcr:created="{Date}2018-08-17T15:04:50.928-03:00"
@@ -35,6 +35,22 @@
                 editable="{Boolean}true">
                 <cq:responsive jcr:primaryType="nt:unstructured"/>
             </responsivegrid>
+            <responsivegrid_680309487
+                jcr:created="{Date}2018-08-23T09:27:01.237-03:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-08-23T09:27:01.237-03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <navigation
+                    jcr:created="{Date}2018-08-23T09:27:35.454-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2018-08-23T09:27:35.454-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foodnews/components/structure/navigation"/>
+            </responsivegrid_680309487>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
