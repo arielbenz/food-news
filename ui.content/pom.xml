@@ -22,7 +22,7 @@
     <!-- ====================================================================== -->
     <parent>
         <groupId>com.bestpost.foodnews</groupId>
-        <artifactId>bestpost-foodnews</artifactId>
+        <artifactId>food-news</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -30,7 +30,7 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>bestpost-foodnews.ui.content</artifactId>
+    <artifactId>food-news.ui.content</artifactId>
     <packaging>content-package</packaging>
     <name>FN Sites Project - UI content</name>
     <description>UI content package for FN Sites Project</description>
@@ -95,7 +95,7 @@
                     <filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>
                     <verbose>true</verbose>
                     <failOnError>true</failOnError>
-                    <group>bestpost-foodnews</group>
+                    <group>food-news</group>
                     <properties>
                         <acHandling>merge_preserve</acHandling>
                     </properties>
@@ -110,7 +110,7 @@
     <dependencies>
         <dependency>
             <groupId>com.bestpost.foodnews</groupId>
-            <artifactId>bestpost-foodnews.core</artifactId>
+            <artifactId>food-news.core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

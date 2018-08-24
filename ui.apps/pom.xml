@@ -22,7 +22,7 @@
     <!-- ====================================================================== -->
     <parent>
         <groupId>com.bestpost.foodnews</groupId>
-        <artifactId>bestpost-foodnews</artifactId>
+        <artifactId>food-news</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -30,7 +30,7 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>bestpost-foodnews.ui.apps</artifactId>
+    <artifactId>food-news.ui.apps</artifactId>
     <packaging>content-package</packaging>
     <name>FN Sites Project - UI apps</name>
     <description>UI apps package for FN Sites Project</description>
@@ -96,11 +96,11 @@
                     <filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>
                     <verbose>true</verbose>
                     <failOnError>true</failOnError>
-                    <group>bestpost-foodnews</group>
+                    <group>food-news</group>
                     <embeddeds>
                         <embedded>
                             <groupId>com.bestpost.foodnews</groupId>
-                            <artifactId>bestpost-foodnews.core</artifactId>
+                            <artifactId>food-news.core</artifactId>
                             <target>/apps/foodnews/install</target>
                         </embedded>
                     </embeddeds>
@@ -132,7 +132,7 @@
     <dependencies>
         <dependency>
             <groupId>com.bestpost.foodnews</groupId>
-            <artifactId>bestpost-foodnews.core</artifactId>
+            <artifactId>food-news.core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

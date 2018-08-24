@@ -19,7 +19,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.bestpost.foodnews</groupId>
-        <artifactId>bestpost-foodnews</artifactId>
+        <artifactId>food-news</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -27,7 +27,7 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>bestpost-foodnews.it.launcher</artifactId>
+    <artifactId>food-news.it.launcher</artifactId>
     <packaging>jar</packaging>
     <name>FN Sites Project - Integration Tests Launcher</name>
     <description>Integration Tests Launcher for FN Sites Project</description>
@@ -39,30 +39,30 @@
         <tag>HEAD</tag>
     </scm-->
 
-    <!-- 
+    <!--
         To keep the instance under test running and run individual tests
         against it, use:
-        
+
             mvn clean verify -DkeepJarRunning=true -Dhttp.port=8080
-            
+
         optionally using jar.executor.vm.options to enable remote debugging,
         and in another console:
-        
+
             mvn -o verify -Dtests.to.run=**/**Test.java -Dtest.server.url=http://localhost:8080
-            
-        optionally using -Dmaven.surefire.debug to enable debugging.            
+
+        optionally using -Dmaven.surefire.debug to enable debugging.
      -->
     <properties>
         <!-- Set this to run the server on a specific port
         <http.port></http.port>
          -->
-        
+
         <!-- URL of a server against which to run tests -->
         <test.server.url>http://${aem.host}:${aem.port}</test.server.url>
-        
+
         <!-- Set this to run tests against an existing server instance -->
         <keepJarRunning>false</keepJarRunning>
-        
+
         <!-- Set this to run tests against a specific hostname, if test.server.url is not set-->
         <test.server.hostname />
 
@@ -71,24 +71,24 @@
 
         <!-- Set this to use a different password for remote execution of sling junit tests -->
         <test.server.password />
-        
+
         <!-- Options for the VM that executes our runnable jar -->
         <jar.executor.vm.options>-Xmx512m</jar.executor.vm.options>
-        
+
         <!-- Change this to use longer or shorter timeouts for testing -->
         <sling.testing.timeout.multiplier>1.0</sling.testing.timeout.multiplier>
-        
+
         <!-- Set this to run the executable jar in a specified filesystem folder -->
         <jar.executor.work.folder />
-        
+
         <!-- Options for the jar to execute. $JAREXEC_SERVER_PORT$ is replaced by the
             selected port number -->
         <jar.executor.jar.options>-p $JAREXEC_SERVER_PORT$</jar.executor.jar.options>
-        
+
         <!-- Change this to run selected tests only -->
         <tests.to.run>**/**Test.java</tests.to.run>
     </properties>
-    
+
     <build>
         <plugins>
            <plugin>
@@ -123,10 +123,10 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <!-- 
+                        <!--
                             Consider all dependencies as candidates to be installed
                             as additional bundles. We use system properties to define
-                            which bundles to install in which order.  
+                            which bundles to install in which order.
                         -->
                         <id>copy-additional-bundles</id>
                         <goals>
@@ -223,15 +223,15 @@
                                 <start.bundles.timeout.seconds>40</start.bundles.timeout.seconds>
                                 <bundle.install.timeout.seconds>30</bundle.install.timeout.seconds>
 
-                                <!-- 
+                                <!--
                                     Define additional bundles to install by specifying the beginning of their artifact name.
                                     The bundles are installed in lexical order of these property names.
-                                    All bundles must be listed as dependencies in this pom, or they won't be installed. 
+                                    All bundles must be listed as dependencies in this pom, or they won't be installed.
                                 -->
                                 <sling.additional.bundle.1>org.apache.sling.junit.core</sling.additional.bundle.1>
                                 <sling.additional.bundle.2>org.apache.sling.junit.scriptable</sling.additional.bundle.2>
-                                <sling.additional.bundle.3>bestpost-foodnews.it.tests</sling.additional.bundle.3>
-                                <sling.additional.bundle.4>bestpost-foodnews.core</sling.additional.bundle.4>
+                                <sling.additional.bundle.3>food-news.it.tests</sling.additional.bundle.3>
+                                <sling.additional.bundle.4>food-news.core</sling.additional.bundle.4>
                                 <sling.additional.bundle.5>org.apache.sling.junit.remote</sling.additional.bundle.5>
                                 <sling.additional.bundle.6>org.apache.sling.testing.tools</sling.additional.bundle.6>
                                 <sling.additional.bundle.7>httpclient-osgi</sling.additional.bundle.7>
@@ -276,7 +276,7 @@
             <version>2.3.4</version>
             <scope>provided</scope>
         </dependency>
-        
+
         <!-- sling testing tools bundles requires httpclient -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
@@ -290,7 +290,7 @@
             <version>4.4.5</version>
             <scope>provided</scope>
         </dependency>
-        
+
         <!-- actual dependencies -->
         <dependency>
             <groupId>org.apache.sling</groupId>
@@ -324,12 +324,12 @@
         </dependency>
         <dependency>
             <groupId>com.bestpost.foodnews</groupId>
-            <artifactId>bestpost-foodnews.it.tests</artifactId>
+            <artifactId>food-news.it.tests</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.bestpost.foodnews</groupId>
-            <artifactId>bestpost-foodnews.core</artifactId>
+            <artifactId>food-news.core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

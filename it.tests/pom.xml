@@ -22,7 +22,7 @@
     <!-- ====================================================================== -->
     <parent>
         <groupId>com.bestpost.foodnews</groupId>
-        <artifactId>bestpost-foodnews</artifactId>
+        <artifactId>food-news</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -30,7 +30,7 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>bestpost-foodnews.it.tests</artifactId>
+    <artifactId>food-news.it.tests</artifactId>
     <packaging>bundle</packaging>
     <name>FN Sites Project - Integration Tests Bundles</name>
     <description>Bundles for Integration Tests for FN Sites Project</description>
@@ -91,12 +91,12 @@
 
         <dependency>
             <groupId>com.bestpost.foodnews</groupId>
-            <artifactId>bestpost-foodnews.core</artifactId>
+            <artifactId>food-news.core</artifactId>
             <version>1.0-SNAPSHOT</version>
             <type>bundle</type>
             <scope>provided</scope>
         </dependency>
-        
+
         <dependency>
             <groupId>com.adobe.aem</groupId>
             <artifactId>uber-jar</artifactId>

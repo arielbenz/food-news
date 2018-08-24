@@ -19,11 +19,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.bestpost.foodnews</groupId>
-        <artifactId>bestpost-foodnews</artifactId>
+        <artifactId>food-news</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>bestpost-foodnews.core</artifactId>
+    <artifactId>food-news.core</artifactId>
     <packaging>bundle</packaging>
     <name>FN Sites Project - Core</name>
     <description>Core bundle for FN Sites Project</description>
