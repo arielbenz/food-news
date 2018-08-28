@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2018-08-24T09:29:33.971-03:00"
+        cq:lastModified="{Date}2018-08-28T13:28:14.319-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/foodnews/settings/wcm/templates/landing-page-template"
         jcr:primaryType="cq:PageContent"
@@ -19,14 +19,119 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
                 <card
-                    jcr:created="{Date}2018-08-24T09:29:00.167-03:00"
+                    cq:styleIds="[1535462512949,1535462577486,1535462604009]"
+                    jcr:created="{Date}2018-08-28T11:02:41.317-03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2018-08-24T09:29:33.970-03:00"
+                    jcr:lastModified="{Date}2018-08-28T13:27:52.218-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="foodnews/components/content/card"
                     articlePath="/content/foodnews/en/recepies/burgers"
+                    hideDescription="false">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            width="6"/>
+                        <tablet
+                            jcr:primaryType="nt:unstructured"
+                            width="12"/>
+                        <phone
+                            jcr:primaryType="nt:unstructured"
+                            width="12"/>
+                    </cq:responsive>
+                </card>
+                <card_377796854
+                    cq:styleIds="[1535462512949,1535462558769,1535462577486,1535462604009]"
+                    jcr:created="{Date}2018-08-28T13:21:43.794-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2018-08-28T13:27:56.400-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foodnews/components/content/card"
+                    articlePath="/content/foodnews/en/recepies/healthy-morning-dessert-blueberries"
+                    hideDescription="false">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="6"/>
+                        <tablet
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="12"/>
+                        <phone
+                            jcr:primaryType="nt:unstructured"
+                            width="12"/>
+                    </cq:responsive>
+                </card_377796854>
+                <card_1821815806
+                    cq:styleIds="[1535462512949,1535462577486,1535462604009]"
+                    jcr:created="{Date}2018-08-28T13:22:00.293-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2018-08-28T13:28:14.317-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foodnews/components/content/card"
+                    articlePath="/content/foodnews/en/recepies/healthy-pasta-in-a-pan"
                     hideDescription="false"/>
+                <card_156907730
+                    cq:styleIds="[1535462604009]"
+                    jcr:created="{Date}2018-08-28T13:22:32.044-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2018-08-28T13:28:08.031-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foodnews/components/content/card"
+                    articlePath="/content/foodnews/en/recepies/preparing-salami-pizza"
+                    hideDescription="false">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            width="6"/>
+                        <phone
+                            jcr:primaryType="nt:unstructured"
+                            width="12"/>
+                    </cq:responsive>
+                </card_156907730>
+                <card_814229632
+                    cq:styleIds="[1535462605284,1535462577486,1535462558769,1535462518380]"
+                    jcr:created="{Date}2018-08-28T13:22:44.388-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2018-08-28T13:25:14.849-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foodnews/components/content/card"
+                    articlePath="/content/foodnews/en/recepies/vegetables-on-a-pan"
+                    hideDescription="false">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="6"/>
+                        <phone
+                            jcr:primaryType="nt:unstructured"
+                            width="12"/>
+                    </cq:responsive>
+                </card_814229632>
+                <card_262654400
+                    cq:styleIds="[1535462605284]"
+                    jcr:created="{Date}2018-08-28T13:23:54.686-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2018-08-28T13:24:13.201-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foodnews/components/content/card"
+                    articlePath="/content/foodnews/en/recepies/yummy-chocolate-waffles"
+                    hideDescription="false">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            width="6"/>
+                        <phone
+                            jcr:primaryType="nt:unstructured"
+                            width="12"/>
+                    </cq:responsive>
+                </card_262654400>
             </responsivegrid>
         </root>
     </jcr:content>

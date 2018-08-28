@@ -2,7 +2,7 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
-        cq:lastModified="{Date}2018-08-24T09:28:41.161-03:00"
+        cq:lastModified="{Date}2018-08-28T10:23:58.633-03:00"
         cq:lastModifiedBy="admin"
         cq:templateType="/conf/foodnews/settings/wcm/template-types/empty-page"
         jcr:primaryType="cq:PageContent"
