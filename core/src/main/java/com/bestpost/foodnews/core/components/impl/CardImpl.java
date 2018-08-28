@@ -126,12 +126,12 @@ public class CardImpl implements Card {
                 // SlingHttpServletRequest we need to use the
                 // modelFactory to wrap the request.
 
-                // Image img = modelFactory.getModelFromWrappedRequest(request, heroImgRes, Image.class);
-                //
-                // if (img != null) {
-                //     // use Image model to return the src attribute
-                //     return img.getSrc();
-                // }
+                Image img = modelFactory.getModelFromWrappedRequest(request, heroImgRes, Image.class);
+
+                if (img != null) {
+                    // use Image model to return the src attribute
+                    return img.getSrc();
+                }
             }
 
         }

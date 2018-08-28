@@ -149,6 +149,12 @@
         </dependency>
 
         <dependency>
+	        <groupId>com.adobe.cq</groupId>
+	        <artifactId>core.wcm.components.extension</artifactId>
+	        <type>zip</type>
+         </dependency>
+
+        <dependency>
             <groupId>javax.jcr</groupId>
             <artifactId>jcr</artifactId>
         </dependency>
@@ -161,13 +167,6 @@
         <dependency>
             <groupId>com.day.cq.wcm</groupId>
             <artifactId>cq-wcm-taglib</artifactId>
-        </dependency>
-
-        <!-- Core Components Extension -->
-        <dependency>
-            <groupId>com.adobe.cq</groupId>
-        <artifactId>core.wcm.components.extension</artifactId>
-        <type>zip</type>
         </dependency>
     </dependencies>
 </project>
