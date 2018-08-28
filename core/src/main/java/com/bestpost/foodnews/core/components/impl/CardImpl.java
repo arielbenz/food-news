@@ -1,4 +1,4 @@
-package com.bespost.foodnews.core.components.impl;
+package com.bestpost.foodnews.core.components.impl;
 
 import javax.annotation.PostConstruct;
 
@@ -14,7 +14,7 @@ import org.apache.sling.models.annotations.injectorspecific.Self;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import org.apache.sling.models.factory.ModelFactory;
 
-import com.bespost.foodnews.core.components.Card;
+import com.bestpost.foodnews.core.components.Card;
 import com.adobe.cq.wcm.core.components.models.Image;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
@@ -125,7 +125,7 @@ public class CardImpl implements Card {
                 // since the Core Image component can only be adapted from a
                 // SlingHttpServletRequest we need to use the
                 // modelFactory to wrap the request.
-                
+
                 // Image img = modelFactory.getModelFromWrappedRequest(request, heroImgRes, Image.class);
                 //
                 // if (img != null) {

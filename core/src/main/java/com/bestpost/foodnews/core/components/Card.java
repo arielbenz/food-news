@@ -1,4 +1,4 @@
-package com.bespost.foodnews.core.components;
+package com.bestpost.foodnews.core.components;
 
 public interface Card {
 
